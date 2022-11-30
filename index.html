@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            
+        }
+
+        #home h1 {
+            letter-spacing: 3px;
+        }
+
+        #home p {
+            letter-spacing: 2px;
+        }
+
+        section {
+            border: 1px solid red;
+        }
+
+        .row {
+            border: 1px solid blue;
+        }
+
+        #job-title::before {
+            content: open-quote;
+            /* height: 24px; */
+            /* visibility: hidden; */
+            /* display: none; */
+        }
+
+        #job-title::after {
+            content: close-quote;
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+
+<body class="bg-dark text-white">
+    <div class="container" >
+        <!-- Nav Section -->
+        <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">KMF</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link active fs-6" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#about-me">About Me</a>
+                        <a class="nav-link" href="#projects">Projects</a>                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Home Section -->
+        <section id="home" class="container-fluid">
+            <div class="row min-vh-100  align-items-center">
+                <div class="col">
+                    <button  class="btn btn-outline-primary">Hi, I'm</button>
+                    <h1 id="name" class="fw-bold mt-2">KARL MICHAEL FIGUERREZ</h1>
+                    <p id="job-title"><span id="first-word"></span><span id="second-word" class="text-primary"></span></p>                    
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section -->
+        <section id="about-me" class="container-fluid min-vh-100">
+
+        </section>
+        <!-- Projects Section -->
+        <section id="projects" class="container-fluid min-vh-100">
+
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous">
+    </script>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>
