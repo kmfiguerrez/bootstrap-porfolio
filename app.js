@@ -7,26 +7,48 @@ const swc = document.getElementById("second-word");
 // const toDisplay = "JAVASCRIPT DEVELOPER";
 // jtc means job title container.
 const jtc = document.getElementById("job-title");
-const jobTitles = ["IT SPECIALIST", "JAVASCRIPT DEVELOPER"];
+const greeting = document.getElementById("greeting");
+const jobTitles = ["IT SPECIALIST", "WEB DEVELOPER"];
 
 
-// util.displayText()
+let stopDisplay = false;
+
+greeting.addEventListener("click", () => {
+    stopDisplay = true;
+})
+
+// const display = async () => {
+//     for (const job of jobTitles) {
+//         console.log(job)
+//         const dRes = await util.displayText(job, fwc, swc);
+//         console.log(dRes);
+//         const sRes = await util.sleep(3000);
+//         console.log(sRes);        
+//         if (job === jobTitles[jobTitles.length - 1]) {
+//             console.log("ayo!")
+//             break;
+//         }
+//         const rRes = await util.removeText(fwc, swc);
+//         console.log(rRes);        
+//     }        
+// }
 
 const display = async () => {
-    for (const job of jobTitles) {
-        console.log(job)
-        const dRes = await util.displayText(job, fwc, swc);
-        console.log(dRes);
-        const sRes = await util.sleep(3000);
-        console.log(sRes);        
-        if (job === jobTitles[jobTitles.length - 1]) {
-            console.log("ayo!")
-            break;
-        }
-        const rRes = await util.removeText(fwc, swc);
-        console.log(rRes);
-        
-    }        
+    while (!stopDisplay) {
+        for (const job of jobTitles) {
+            
+            // console.log(job)
+            const dRes = await util.displayText(job, fwc, swc);
+            // console.log(dRes);
+            const sRes = await util.sleep(3000);
+            // console.log(sRes);        
+            const rRes = await util.removeText(fwc, swc);
+            // console.log(rRes);
+            if (stopDisplay) {
+                break;
+            }        
+        }    
+    }            
 }
 
 display();

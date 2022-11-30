@@ -104,7 +104,7 @@ const removeText = (firstWordContainer, secondWordContainer) => {
                 clearInterval(interval);
                 resolve("Done removing the display!");
             }
-        }, 100)
+        }, 50)
     })
 }
 
