@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/590554ec92.js" crossorigin="anonymous"></script>
-    <style>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
         body {
             font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Rob, "Helvetica Neue", "N Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "N Color Emoji";            
         }
@@ -38,7 +39,7 @@
         #contacts .fa-brands:hover {
             color: #0d6efd;            
         }
-    </style>
+    </style> -->
     <title>Portfolio</title>
 </head>
 
@@ -55,7 +56,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link active fs-6" aria-current="page" href="#home">HOME</a>
+                        <a class="nav-link fs-6" aria-current="page" href="#home">HOME</a>
                         <a class="nav-link" href="#about-me">ABOUT ME</a>
                         <a class="nav-link" href="#projects">PROJECTS</a>                        
                         <a class="nav-link" href="#contacts">CONTACTS</a>
@@ -195,22 +196,24 @@
             <!-- Cards Container -->
             <div class="row gy-4">
                 <div class="col-sm">
-                    <div class="card text-center mx-auto" style="width: 20rem;">
-                        <div class="fa-3x">                                                        
-                            <i class="fa-solid fa-cog fa-spin" style="--fa-animation-duration: 15s;"></i>
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">IPv4 Subnetting</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">UNDER CONSTRUCTION</h6>
-                            <p class="card-text">
-                                The logic part of this project is already complete.
-                                The UI part is still not finished.
-                            </p>
-                            <bun class="btn btn-outline-info btn-sm">Details</bun>
+                    <div class="card mx-auto" style="width: 320px;">
+                        <!-- <img src="./img/ipv4.svg" class="card-img d-block mx-auto" alt="web development picture" style="width: 200px;"> -->
+                        <img src="./img/ipv4-logo.svg" class="card-img d-block mx-auto" alt="web development picture" style="width: 200px;">
+                        <div class="card-body ">
+                            <h6 class="card-title pt-3 border-top fw-bold">IPV4 SUBNETTING</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-primary mb-0">Web App</p>
+                                <a href="#staticBackdrop" data-bs-toggle="modal" class="stretched-link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#0d6efd" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                    </svg>
+                                </a>                                
+                            </div>                            
                         </div>
                         <div class="card-footer">
-                            
-                        </div>  
+
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm">
@@ -224,25 +227,7 @@
                             <p class="card-text">
                                 Both Logic and UI parts are still not finished.
                             </p>
-                            <bun class="btn btn-outline-info btn-sm">Details</bun>
-                        </div>
-                        <div class="card-footer">
-                            
-                        </div>  
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="card text-center mx-auto" style="width: 20rem;">
-                        <div class="fa-3x">                                                        
-                            <i class="fa-solid fa-cog fa-spin" style="--fa-animation-duration: 15s;"></i>                            
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">EUI-64</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">UNDER CONSTRUCTION</h6>
-                            <p class="card-text">
-                                To overhaul both logic and UI parts.
-                            </p>
-                            <bun class="btn btn-outline-info btn-sm">Details</bun>
+                            <button class="btn btn-outline-info btn-sm">Details</button>
                         </div>
                         <div class="card-footer">
                             
@@ -260,7 +245,7 @@
                             <p class="card-text">
                                 Both Logic and UI parts are still not finished.
                             </p>
-                            <bun class="btn btn-outline-info btn-sm">Details</bun>
+                            <button class="btn btn-outline-info btn-sm">Details</button>
                         </div>
                         <div class="card-footer">
                             
@@ -314,6 +299,57 @@
                 </div>
             </div>
         </section>
+
+        <!-- Project's Modals -->
+        <div class="modal fade text-dark" id="staticBackdrop"  tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" style="max-height: 500px;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="staticBackdropLabel">IPV4 SUBNETTING</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5 class="fw-bold">Description</h5>
+                        <p>
+                            IPv4 Address subnetting is the process of splitting a network into smaller networks known as Subnets.
+                            This project is a web app and can be used by anyone whether they're learning or practicing subnetting
+                            for free. 
+                            <br/>
+                            <br/>
+                            I developed this project as one of my personal project to help me check my work or whenever I'm
+                            practicing ipv4 subnetting.
+                            <br/>
+                            <br/>                            
+                            <strong>Note:</strong> This app is on a free hosting plan so access to this app is limited.                            
+                        </p>
+                        <h5 class="fw-bold">Tech Used</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>SASS</li>
+                            <li>Bootstrap 5</li>
+                            <li>Vanilla Javascript</li>
+                        </ul>                        
+                        <h5 class="fw-bold">Features</h5>
+                        <ul>
+                            <li>Conversions</li>
+                            <li>Validations</li>
+                        </ul>                        
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <a href="" class="d-flex mx-3 text-decoration-none text-reset" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                            <p class="mb-0 ms-1 text-primary">Code</p>
+                        </a>
+                        <a href="https://ipv4subnetting.netlify.app/" class="d-flex mx-3 text-decoration-none text-reset" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg>
+                            <p class="mb-0 ms-1 text-primary">Demo</p>
+                        </a>                                                
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 

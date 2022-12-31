@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Rob, "Helvetica Neue", "N Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "N Color Emoji";            
+}
+
+#home h1 {
+    letter-spacing: 3px;
+}
+
+#home p {
+    letter-spacing: 2px;
+}
+
+#job-title::before {
+    content: open-quote;
+}
+
+#job-title::after {
+    content: close-quote;
+}
+
+#contacts .fa-brands {
+    color: white;            
+}
+
+#contacts .fa-brands:hover {
+    color: #0d6efd;            
+}
+
+.modal-footer p:hover {
+    color: #0d6efd;
+    font-weight: bold;
+}
