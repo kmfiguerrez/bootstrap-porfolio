@@ -197,7 +197,6 @@
             <div class="row gy-4">
                 <div class="col-sm">
                     <div class="card mx-auto" style="width: 320px;">
-                        <!-- <img src="./img/ipv4.svg" class="card-img d-block mx-auto" alt="web development picture" style="width: 200px;"> -->
                         <img src="./img/ipv4-logo.svg" class="card-img d-block mx-auto" alt="web development picture" style="width: 200px;">
                         <div class="card-body ">
                             <h6 class="card-title pt-3 border-top fw-bold">IPV4 SUBNETTING</h6>
@@ -281,10 +280,10 @@
                 <!-- Message -->
                 <div class="col-sm">
                     <h4 class="text-primary">SEND ME A MESSAGE</h4>
-                    <form>
+                    <form action="https://formsubmit.co/18d42eacd5eeb57e6d3b2c10fa683f2a" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Your Name</label>
-                            <input type="text" class="form-control" id="email" name="email" required>                            
+                            <input type="text" class="form-control" id="email" name="name" required>                            
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Your Email</label>
@@ -292,9 +291,10 @@
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="3" required></textarea>
-                          </div>                        
-                        <bun type="submit" class="btn btn-primary">Submit</bun>
+                            <textarea class="form-control" id="message" rows="3" name="message" required></textarea>
+                        </div>
+                        <input type="hidden" name="_next" value="https://kmfiguerrez.github.io">
+                        <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
             </div>
@@ -338,7 +338,7 @@
                         </ul>                        
                     </div>
                     <div class="modal-footer justify-content-center">
-                        <a href="" class="d-flex mx-3 text-decoration-none text-reset" target="_blank">
+                        <a href="https://github.com/kmfiguerrez/IPv4-Subnetting" class="d-flex mx-3 text-decoration-none text-reset" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
                             <p class="mb-0 ms-1 text-primary">Code</p>
                         </a>
