@@ -7,7 +7,7 @@ const swc = document.getElementById("second-word");
 // const toDisplay = "JAVASCRIPT DEVELOPER";
 // jtc means job title container.
 const jtc = document.getElementById("job-title");
-const jobTitles = ["IT SPECIALIST", "WEB DEVELOPER"];
+const jobTitles = ["IT SPECIALIST", "JAVASCRIPT DEVELOPER"];
 
 const display = async () => {
     while (true) {
